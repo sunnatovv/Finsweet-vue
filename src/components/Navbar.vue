@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="bg-[#1C1E53] py-[30px]">
+  <div class="bg-[#1C1E53] py-[12px] fixed z-50 w-full">
     <div class="container flex justify-between items-center">
       <p class="text-3xl text-white">{Finsweet</p>
       <div class="flex font-semibold text-white gap-6 items-center">

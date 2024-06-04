@@ -5,17 +5,19 @@
       <button class="px-6 py-3">View more -></button>
     </div>
 
-    <div class="grid grid-cols-3 my-[50px] ">
-        <div class="col-span-2 relative">
-          <img class="absolute" src="/hover.png" alt="">
-            <img src="/Card.png" alt="">
+    <div class="grid grid-cols-3 my-[50px]">
+      <div class="col-span-2 relative overflow-hidden group">
+        <div
+          class="absolute h-full w-[45%] top-0 duration-300 -left-full group-hover:left-0 bg-gradient-to-r from-[#1C1E5368]/40 to-[#1C1E53]"
+        >
+          
         </div>
-        <div class="">
-            <img src="/miniCard.png" alt="">
-            <img class="ml-2 mt-8" src="/miniCard2.png" alt="">
-        </div>
-
-
+        <img src="/Card.png" alt="" />
+      </div>
+      <div class="">
+        <img src="/miniCard.png" alt="" />
+        <img class="ml-2 mt-8" src="/miniCard2.png" alt="" />
+      </div>
     </div>
   </div>
 </template>
