@@ -6,7 +6,8 @@
     </div>
 
     <div class="grid grid-cols-3 my-[50px] ">
-        <div class="col-span-2">
+        <div class="col-span-2 relative">
+          <img class="absolute" src="/hover.png" alt="">
             <img src="/Card.png" alt="">
         </div>
         <div class="">
