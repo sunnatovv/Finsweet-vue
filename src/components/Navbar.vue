@@ -87,7 +87,7 @@ const toggleMenu = () => {
     <!-- Mobile menu -->
     <div
       v-if="isMenuOpen"
-      class="fixed bg-[#1C1E53] z-40 flex flex-col md:hidden w-[60%] top-12 h-full right-[-1px] py-6 pl-10 opacity-95"
+      class="fixed bg-[#1C1E53] duration-150 z-40 flex flex-col md:hidden w-[60%] top-12 h-full right-[-1px] py-6 pl-10 opacity-95"
     >
     
       <a href="/" class="text-base font-semibold my-4 text-white hover:text-black">Home</a>

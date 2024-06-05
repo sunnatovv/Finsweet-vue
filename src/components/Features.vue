@@ -36,7 +36,7 @@ const parag = ref([
         </h1>
       </div>
       <div
-        class="grid grid-cols-3 grid-rows-2 gap-8 px-[38px] py[48px] mt-[47px]"
+        class="grid w-full grid-cols-3 grid-rows-2 gap-8  py[48px] mt-[47px]"
       >
         <div v-for="(item, index) in h6" :key="index" class="p-12 bg-white">
           <img :src="func(index)" alt="" :class="func()" />
