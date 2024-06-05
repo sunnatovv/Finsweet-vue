@@ -29,9 +29,9 @@ const parag = ref([
 <template>
   <div class="bg-[#F4F6FC]">
     <div class="container pb-[50px]">
-      <div class="text-center pb-12 pt-[100px] px-[400px]">
+      <div class="text-center pb-12 pt-[100px] md:px-[400px]">
         <h2 class="text-sm font-medium text-gray-500">Features</h2>
-        <h1 class="mt-2 text-[48px] font-semibold text-gray-900">
+        <h1 class="mt-2 md:text-[48px] text-[24px] font-semibold text-gray-900">
           Design that solves problems, one product at a time
         </h1>
       </div>
