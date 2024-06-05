@@ -10,9 +10,9 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </p>
-        <div class="flex gap-8 items-center">
-            <button class=" border border-[#FCD980] rounded-[40px] md:py-3 py-1 md:px-8 px-[40px] md:text-[16px] text-[10px] text-black bg-[#FCD980]">View our work</button>
-            <button class="border border-[#1C1E53] rounded-[40px] py-3 px-8 text-white ">View pricing -></button>
+        <div class="flex md:gap-8 gap-5 items-center">
+            <button class=" border border-[#FCD980] rounded-[40px] md:py-3 py-1 md:px-8 px-[30px] md:text-[16px] text-[10px] text-black bg-[#FCD980]">View our work</button>
+            <button class="border border-[#1C1E53] rounded-[40px] md:py-3 py-1 md:px-8 px-[30px] max-sm:text-[10px] text-white ">View pricing -></button>
         </div>
       </div>
       <div class="md:w-1/2">
