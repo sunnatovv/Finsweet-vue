@@ -1,16 +1,16 @@
 <script setup>
 import { ref } from "vue";
-const imgs = ref(["Icon.png", "disscuss.png", "timer.png"]);
+const imgs = ref([
+  "timer.png",
+  "Icon.png",
+  "Icon.png",
+  "disscuss.png",
+  "timer.png",
+  "Icon.png",
+]);
 
 const func = (index) => {
-  if (index == 2) {
-    return imgs.value[0];
-  } else if (index == 3) {
-    return imgs.value[1];
-  } else if (index == 4) {
-    return imgs.value[2];
-  }
-  return "h-[35px]";
+  return imgs.value[index];
 };
 
 const h6 = ref([
@@ -35,11 +35,13 @@ const parag = ref([
           Design that solves problems, one product at a time
         </h1>
       </div>
-      <div
-        class="grid w-full grid-cols-3 grid-rows-2 gap-8  py[48px] mt-[47px]"
-      >
-        <div v-for="(item, index) in h6" :key="index" class="p-12 bg-white">
-          <img :src="func(index)" alt="" :class="func()" />
+      <div class="grid w-full grid-cols-3 grid-rows-2 gap-8 py[48px] mt-[47px]">
+        <div
+          v-for="(item, index) in h6"
+          :key="index"
+          class="p-12 bg-white hover:shadow-2xl"
+        >
+          <img :src="func(index)" alt="asdf" />
           <h6 class="text-2xl mt-[25px]" style="color: rgba(40, 41, 56, 1)">
             {{ item }}
           </h6>
