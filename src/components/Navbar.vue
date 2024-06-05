@@ -14,7 +14,7 @@ const toggleMenu = () => {
       <div class="flex font-semibold text-white gap-2 items-center">
         <!-- Hamburger icon for mobile view -->
         <div class="md:hidden">
-          <img class="" src="/image.png" alt="Menu" @click="toggleMenu" />
+          <img class="text-white" src="/image.png" alt="Menu" @click="toggleMenu" />
         </div>
         <!-- Navigation menu for larger screens -->
         <div class="hidden md:flex gap-2">
