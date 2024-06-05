@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <div class="flex justify-between items-center py-4 mt-4">
-      <h2 class="text-[48px] text-black">View our projects</h2>
+      <h2 class="md:text-[48px] text-[22px] text-black">View our projects</h2>
       <button class="px-6 py-3">View more -></button>
     </div>
 
-    <div class="grid grid-cols-3 my-[40px] gap-5">
-      <div class="col-span-2 row-span-2 relative overflow-hidden group">
+    <div class="grid md:grid-cols-3 my-[40px] gap-5">
+      <div class="md:col-span-2 row-span-2 relative overflow-hidden group">
         <div
           class="absolute h-full w-[45%] top-0 duration-300 -left-full group-hover:left-0 bg-gradient-to-r from-[#1C1E5368]/40 to-[#1C1E53] px-8 pt-[360px]"
         >

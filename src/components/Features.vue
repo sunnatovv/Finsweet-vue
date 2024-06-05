@@ -35,7 +35,7 @@ const parag = ref([
           Design that solves problems, one product at a time
         </h1>
       </div>
-      <div class="grid w-full grid-cols-3 grid-rows-2 gap-8 py[48px] mt-[47px]">
+      <div class="grid w-full md:grid-cols-3 md:grid-rows-2 gap-8 py[48px] mt-[47px]">
         <div
           v-for="(item, index) in h6"
           :key="index"
