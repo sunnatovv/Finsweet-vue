@@ -14,10 +14,10 @@ const toggleMenu = () => {
       <div class="flex font-semibold text-white gap-2 items-center">
         <!-- Hamburger icon for mobile view -->
         <div class="md:hidden">
-          <img class="size-10" src="/hamb.png" alt="Menu" @click="toggleMenu" />
+          <img class="" src="/image.png" alt="Menu" @click="toggleMenu" />
         </div>
         <!-- Navigation menu for larger screens -->
-        <div class="hidden md:flex">
+        <div class="hidden md:flex gap-2">
           <a href="/" class="text-base font-semibold m-6 group relative w-max">
             <span>Home</span>
             <span
@@ -76,7 +76,7 @@ const toggleMenu = () => {
             ></span>
           </a>
           <button
-            class="border border-[#F4F6FC33] rounded-[40px] px-8 py-3 hover:bg-white hover:text-[#1C1E53] hover:duration-500"
+            class="border border-[#F4F6FC33] rounded-[40px] h-14 mt-2 px-8 py-2 hover:bg-white hover:text-[#1C1E53] hover:duration-500"
           >
             <a href="/contact">Contact Us</a>
           </button>
@@ -87,18 +87,16 @@ const toggleMenu = () => {
     <!-- Mobile menu -->
     <div
       v-if="isMenuOpen"
-      class="fixed inset-0 bg-[#1C1E53] z-40 flex flex-col items-center justify-center md:hidden w-1/2"
+      class="fixed bg-[#1C1E53] z-40 flex flex-col md:hidden w-[60%] top-12 h-full right-[-1px] py-6 pl-10 opacity-95"
     >
-      <a href="/" class="text-base font-semibold my-4">Home</a>
-      <a href="/about" class="text-base font-semibold my-4">About us</a>
-      <a href="/pricing" class="text-base font-semibold my-4">Pricing</a>
-      <a href="/work" class="text-base font-semibold my-4">Work</a>
-      <a href="/blog" class="text-base font-semibold my-4">Blog</a>
-      <button
-        class="border border-[#F4F6FC33] rounded-[40px] px-8 py-3 hover:bg-white hover:text-[#1C1E53] hover:duration-500 my-4"
-      >
-        <a href="/contact">Contact Us</a>
-      </button>
+    
+      <a href="/" class="text-base font-semibold my-4 text-white hover:text-black">Home</a>
+      <a href="/about" class="text-base font-semibold my-4 text-white hover:text-black">About us</a>
+      <a href="/pricing" class="text-base font-semibold my-4 text-white hover:text-black">Pricing</a>
+      <a href="/work" class="text-base font-semibold my-4 text-white hover:text-black">Work</a>
+      <a href="/blog" class="text-base font-semibold my-4 text-white hover:text-black">Blog</a>
+
+      <a href="/contact" class="text-base font-semibold my-4 text-white hover:text-black">Contact Us</a>
     </div>
   </div>
 </template>

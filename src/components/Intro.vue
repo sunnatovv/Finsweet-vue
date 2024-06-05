@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="bg-[#1C1E53] pb-[140px] pt-[200px]">
-    <div class="container flex">
+    <div class="container flex gap-2">
       <div class="block w-1/2 font-bold">
         <h2 class="text-white text-[58px]">
           Building stellar websites for early startups
