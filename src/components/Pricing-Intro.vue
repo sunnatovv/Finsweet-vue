@@ -49,7 +49,7 @@ const plans = ref([
 <template>
   <div class="container pt-[140px]">
     <!-- Pricing Header -->
-    <div class="text-[#282938] text-center px-[430px] py-10">
+    <div class="text-[#282938] text-center md:px-[430px] md:py-10">
       <h2 class="text-[45px]">Our Pricing Plans</h2>
       <p class="font-medium">
         When you’re ready to go beyond prototyping in Figma, Webflow is ready to
@@ -61,9 +61,10 @@ const plans = ref([
     <div class=" w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
         <div
-          v-for="plan in plans"
+          v-for="(plan,index) in plans"
           :key="plan.title"
-          class="border py-12 px-14 rounded-lg shadow-md hover:shadow-2xl hover:bg-[#1C1E53] hover:text-white"
+          :class="index==1 ? 'bg-[#1C1E53] text-white': ''"
+          class="border py-12 px-14 rounded-lg shadow-md hover:shadow-2xl "
         >
           <h2 class="text-2xl font-bold py-3">{{ plan.price }}</h2>
           <h3 class="text-xl py-4">{{ plan.title }}</h3>
@@ -75,7 +76,42 @@ const plans = ref([
               :key="feature.name"
               :class="{ 'text-gray-500': !feature.included }"
             >
-              <img class="" src="/Pointer.png" alt="" />
+              <img class="" v-if="feature.included" src="/Pointer.png" alt="" />
+              <span v-else>
+                                  <svg
+                    width="16"
+                    height="21"
+                    viewBox="0 0 16 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g style="mix-blend-mode: luminosity">
+                      <path
+                        d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z"
+                        fill="#a8aab0"
+                      />
+                      <path
+                        d="M13.7767 9.23707C14.5942 9.85191 14.5701 11.0868 13.729 11.6691L3.85392 18.5069C2.85908 19.1958 1.5 18.4838 1.5 17.2737L1.5 3.00968C1.5 1.77272 2.91294 1.06739 3.90155 1.81084L13.7767 9.23707Z"
+                        stroke="url(#paint0_linear_174_512)"
+                        stroke-width="3"
+                      />
+                    </g>
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_174_512"
+                        x1="-4.84615"
+                        y1="-17"
+                        x2="11.6069"
+                        y2="11.3225"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+              </span>
               <i
                 v-if="feature.included"
                 class="fas fa-check text-green-500"
@@ -87,7 +123,8 @@ const plans = ref([
           <div class="flex justify-center">
             <button
               v-if="plan.buttonText"
-              class="mt-4 py-[15px] px-[50px] bg-[#282938] text-white rounded-[40px] hover:bg-[#FCD980] hover:text-[#282938]"
+              :class="index==1?'bg-[#FCD980] text-[#282938]' :'text-white'"
+              class="mt-4 py-[15px] px-[50px] bg-[#282938]  rounded-[40px] "
             >
               {{ plan.buttonText }}
             </button>
