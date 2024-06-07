@@ -1,11 +1,16 @@
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
 
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
 </script>
 <template>
   <div class="bg-[#1C1E53] py-[12px] fixed z-50 w-full">
@@ -75,7 +80,7 @@ const toggleMenu = () => {
               class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-indigo-600 group-hover:w-3/6 duration-300"
             ></span>
           </a>
-          <button
+          <button @click="router.push('/contact')"
             class="border border-[#F4F6FC33] rounded-[40px] h-14 mt-2 px-8 py-2 hover:bg-white hover:text-[#1C1E53] hover:duration-500"
           >
             <a href="/contact">Contact Us</a>

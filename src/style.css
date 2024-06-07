@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 
+input, textarea{
+    outline:none
+}
