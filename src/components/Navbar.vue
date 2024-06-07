@@ -19,7 +19,7 @@ const toggleMenu = () => {
         <div class="md:hidden">
           <img
             class="text-white"
-            src="/image.png"
+            src="/hamburgar.png"
             alt="Menu"
             @click="toggleMenu"
           />

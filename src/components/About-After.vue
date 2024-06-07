@@ -1,6 +1,6 @@
 <template>
   <div class="container py-6">
-    <div class="md:flex bg-[#F4F5F5] md:p-[90px] px-[50px] md:gap-[60px]">
+    <div class="md:flex bg-[#F4F5F5] md:p-[90px] md:px-[50px] md:gap-[60px] px-8 text-center">
       <div v-for="(item, index) in head" :key="index" class="max-sm:py-[25px]">
         <h2 class="text-[30px] py-4 font-semibold max-sm:text-center">{{ item }}</h2>
         <p>

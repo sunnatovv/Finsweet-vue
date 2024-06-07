@@ -14,7 +14,7 @@
         <h3 class="py-2">Name</h3>
         <input
           v-model="form.name"
-          class="border rounded-md md:px-4 py-3 text-left hover:shadow-inner w-full"
+          class="border rounded-md md:px-4 py-3 text-left hover:shadow-inner w-full px-3"
           type="text"
           placeholder="Enter your name"
           required
@@ -24,7 +24,7 @@
         <h3 class="py-2">Email</h3>
         <input
           v-model="form.email"
-          class="border rounded-md w-[370px] px-4 py-3 text-left hover:shadow-inner"
+          class="border rounded-md w-full px-4 py-3 text-left hover:shadow-inner"
           type="email"
           placeholder="Enter your email"
           required
@@ -33,7 +33,7 @@
       <div class="">
         <h3 class="py-2">Subject</h3>
         <input
-          class="border rounded-md w-[370px] px-4 py-3 text-left hover:shadow-inner"
+          class="border rounded-md w-full px-4 py-3 text-left hover:shadow-inner"
           type="text"
           placeholder="Provide content"
         />
@@ -41,7 +41,7 @@
       <div class="">
         <h3 class="py-2">Subject</h3>
         <input
-          class="border rounded-md w-[370px] px-4 py-3 text-left hover:shadow-inner"
+          class="border rounded-md w-full px-4 py-3 text-left hover:shadow-inner"
           type="text"
           placeholder="Select subject"
         />
@@ -50,7 +50,7 @@
         <h3 class="py-2">Message</h3>
         <textarea
           v-model="form.message"
-          class="w-[95%] h-[100px] px-[32px] py-[18px] resize-none hover:shadow-inner"
+          class="w-full h-[100px] md:px-[32px] py-[18px] resize-none hover:shadow-inner px-3 border rounded"
           placeholder="Write your question here"
           required
         ></textarea>
