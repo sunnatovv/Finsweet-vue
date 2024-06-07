@@ -48,14 +48,14 @@ const obj = reactive([
 ]);
 </script>
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center max-sm:mt-10">
     <div class="container pt-[60px]">
       <div class="flex justify-center gap-3">
         <span
           v-for="(category, index) in categories"
           :key="index"
           @click="selectCategory(index)"
-          class="py-6"
+          class="md:py-6"
           :class="{
             'text-blue-600 font-normal': activeIndex === index,
             'text-[#282938]': activeIndex !== index,
@@ -66,22 +66,22 @@ const obj = reactive([
         </span>
       </div>
 
-      <div class="grid grid-cols-2 gap-[34px] py-10">
-        <div v-for="(item, index) in obj" :key="index" class="hover:shadow-2xl">
+      <div class="md:grid md:grid-cols-2 gap-[34px] md:py-10 pb-10 pt-2">
+        <div v-for="(item, index) in obj" :key="index" class="hover:shadow-2xl px-4 max-sm:pt-6 max-sm:text-center">
           <img class="w-full" :src="item.img" alt="" />
-          <h3 class="text-[35px] pt-4 text-[#282938]">
+          <h3 class="md:text-[35px] text-[20px] pt-4 text-[#282938] max-sm:text-center">
             Template {{ index + 1 }}
           </h3>
           <p class="font-normal py-3">{{ item.description }}</p>
-          <div class="flex items-center gap-3 py-4">
+          <div class="flex items-center gap-3 pt-4 pb-10 max-sm:justify-center">
             <h3 class="font-medium text-[#282938]">{{ item.but }}</h3>
             <img src="/arrow-blue.png" alt="" />
           </div>
         </div>
       </div>
 
-      <div class="mt-10 text-center px-[350px] py-[60px]">
-        <h2 class="text-[48px] font-semibold">Let's build something great together</h2>
+      <div class="mt-10 text-center md:px-[350px] py-[60px]">
+        <h2 class="md:text-[48px] text-[24px] font-semibold">Let's build something great together</h2>
         <p class="py-5 px-[60px]">
           Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
           ultricies nec dolor sit amet, scelerisque cursus purus.

@@ -2,7 +2,7 @@
 <template>
   <div class="container pt-[180px]">
     <div class=" text-center">
-      <h2 class="text-[43px] font-bold px-[290px] text-[#282938]">
+      <h2 class="md:text-[43px] text-[20px] font-bold md:px-[290px] text-[#282938]">
         A UX Case Study on Creating a Studious Environment for Students
       </h2>
       <p class="py-4">Andrew Jonson Posted on 27th January 2021</p>
@@ -10,7 +10,7 @@
     <div>
       <img class="w-full py-6" src="/blog-intro.png" alt="intro" />
     </div>
-    <div class="text-center px-[320px] py-6">
+    <div class="text-center md:px-[320px] py-6">
       <p class="text-[#282938] font-normal py-4">
         Apparently we had reached a great height in the atmosphere, for the sky
         was a dead black, and the stars had ceased to twinkle. By the same

@@ -1,14 +1,38 @@
+<script>
+import Swiper from "swiper";
+import "swiper/swiper-bundle.css";
+
+export default {
+  mounted() {
+    this.swiper = new Swiper(".swiper-container", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  },
+  methods: {
+    back() {
+      this.swiper.slidePrev();
+    },
+    next() {
+      this.swiper.slideNext();
+    },
+  },
+};
+</script>
+
 <template>
   <div class="container md:flex md:py-24 relative">
     <div class="md:w-1/2">
-      <div class="gap-5 max-md:mx-12 my-12">
-        <h1
-          class="md:text-4xl text-xl max-w-[300px] max-md:mx-auto font-semibold max-md:text-center max-md:max-w-[200px]"
+      <div class="gap-5 max-md:mx-12 max-sm:my-10">
+        <h2
+          class="md:text-4xl text-xl max-w-[300px] max-md:mx-auto font-semibold max-md:text-center max-md:max-w-[270px]"
         >
           What our clients say about us
-        </h1>
+        </h2>
         <p
-          class="text-[#282938] max-md:-ml-5 max-md:text-center text-sm md:max-w-[300px] w-72 py-4"
+          class="text-[#282938] max-md:-ml-5 max-md:text-center text-sm md:max-w-[300px] py-4"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
         </p>
@@ -40,7 +64,7 @@
       class="flex gap-4 absolute md:right-24 right-5 md:bottom-28 bottom-8 z-10"
     >
       <button
-        @click="goToPrevSlide"
+        @click="back"
         class="rounded-full border md:py-5 px-2 bg-white border-[#1C1E53] my-8 md:px-5 py-2 hover:bg-[#1C1E53] hover:text-white text-[#1C1E53]"
       >
         <svg
@@ -61,7 +85,7 @@
         </svg>
       </button>
       <button
-        @click="goToNextSlide"
+        @click="next"
         class="rounded-full border border-[#1C1E53] bg-white md:px-5 px-2 md:py-5 py-2 my-8 hover:bg-[#1C1E53] hover:text-white text-[#1C1E53]"
       >
         <svg
@@ -84,29 +108,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import Swiper from "swiper";
-import "swiper/swiper-bundle.css";
-
-export default {
-  mounted() {
-    this.swiper = new Swiper(".swiper-container", {
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  },
-  methods: {
-    goToPrevSlide() {
-      this.swiper.slidePrev();
-    },
-    goToNextSlide() {
-      this.swiper.slideNext();
-    },
-  },
-};
-</script>
-
-<style></style>
